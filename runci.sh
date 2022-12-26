@@ -4,7 +4,7 @@ set -euo pipefail
 USE_MSAN=0
 USE_TSAN=0
 
-autoreconf -i
+./autogen.sh
 
 # Test with ASAN / Address Sanitizer
 export ASAN_OPTIONS="abort_on_error=1"
